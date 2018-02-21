@@ -43,12 +43,7 @@ public class CourseLectureRepository {
 	
 	
 	public Lecture getLecture(String lectureId) {
-		for(Lecture lecture : lectures.values()) {
-			if(lecture.getLectureId() == lectureId) {
-				return lecture;
-			}	
-		}
-		return new Lecture();
+		return lectures.get(lectureId);
 	}
 	
 	public void addLecture(Lecture lecture) {

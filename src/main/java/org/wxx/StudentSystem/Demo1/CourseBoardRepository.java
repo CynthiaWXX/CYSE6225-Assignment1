@@ -26,12 +26,7 @@ public class CourseBoardRepository {
 	
 	
 	public Board getBoard(int announcementId) {
-		for(Board board : boards.values()) {
-			if(board.getAnnouncementId() == announcementId) {
-				return board;
-			}	
-		}
-		return new Board();
+		return boards.get(announcementId);
 	}
 	
 	public void addBoard(Board board) {

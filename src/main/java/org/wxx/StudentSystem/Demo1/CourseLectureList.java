@@ -30,6 +30,7 @@ public class CourseLectureList {
 	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public Lecture postLecture(Lecture lecture) {
+		lectureRepo.addLecture(lecture);
 		return lecture;
 	}
 	
@@ -38,6 +39,7 @@ public class CourseLectureList {
 	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public Lecture putLecture(Lecture lecture) {
+		lectureRepo.updateLecture(lecture);
 		return lecture;
 	}
 	
@@ -46,6 +48,7 @@ public class CourseLectureList {
 	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public Lecture deleteLecture(Lecture lecture) {
+		lectureRepo.removeLecture(lecture);
 		return lecture;
 	}
 

@@ -38,12 +38,7 @@ public class CourseStudentRepository {
 	
 	
 	public Student getStudent(int studentId) {
-		for(Student s : students.values()) {
-			if(s.getStudentId() == studentId) {
-				return s;
-			}	
-		}
-		return new Student();
+		return students.get(studentId);
 	}
 	
 	public void addStudent(Student student) {

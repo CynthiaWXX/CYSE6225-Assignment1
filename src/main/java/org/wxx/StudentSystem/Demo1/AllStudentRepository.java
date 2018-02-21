@@ -52,12 +52,7 @@ public class AllStudentRepository {
 	
 	
 	public Student getAllStudent(int studentId) {
-		for(Student s : students.values()) {
-			if(s.getStudentId() == studentId) {
-				return s;
-			}	
-		}
-		return new Student();
+		return students.get(studentId);
 	}
 	
 	public void addAllStudent(Student student) {

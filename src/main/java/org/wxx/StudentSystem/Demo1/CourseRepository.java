@@ -10,7 +10,7 @@ public class CourseRepository {
 		
 		Course course1 = new Course();
 		course1.setCourseId("CSYE6225");
-		course1.setCourseName("Cloud_Computing");
+		course1.setCourseName("Could_Computing");
 		course1.setSemester("Spring 2018");
 		
 		Course course2 = new Course();
@@ -28,12 +28,7 @@ public class CourseRepository {
 	
 	
 	public Course getCourse(String courseId) {
-		for(Course course : courses.values()) {
-			if(course.getCourseId() == courseId) {
-				return course;
-			}	
-		}
-		return new Course();
+		return courses.get(courseId);
 	}
 	
 	public void addCourse(Course course) {
