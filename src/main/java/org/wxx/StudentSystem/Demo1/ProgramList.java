@@ -24,8 +24,6 @@ public class ProgramList {
 
 	
 	@Path("Information_System/CourseList")
-	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
-	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public CourseList getCourseList() {
 		 return new CourseList();
 	}
