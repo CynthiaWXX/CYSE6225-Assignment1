@@ -45,7 +45,7 @@ public class AllStudentLists {
 	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public Student deleteStudent(Student student) {
-		AllstudRepo.addAllStudent(student);
+		AllstudRepo.removeAllStudent(student);
 		return student;
 	}
 }

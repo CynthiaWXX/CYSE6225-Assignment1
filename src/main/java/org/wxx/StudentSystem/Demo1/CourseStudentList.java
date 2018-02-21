@@ -47,7 +47,7 @@ public class CourseStudentList {
 	@Path("student")
 	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public Student deleteStudent(Student student) {
-		studentRepo.addStudent(student);
+		studentRepo.removeStudent(student);
 		return student;
 	}
 

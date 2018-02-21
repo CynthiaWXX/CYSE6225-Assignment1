@@ -47,7 +47,7 @@ public class CourseBoardList {
 	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public Board deleteBoard(Board board) {
-		boardRepo.addBoard(board);
+		boardRepo.removeBoard(board);
 		return board;
 	}
 
