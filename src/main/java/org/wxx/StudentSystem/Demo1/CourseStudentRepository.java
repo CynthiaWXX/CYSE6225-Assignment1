@@ -38,6 +38,7 @@ public class CourseStudentRepository {
 	
 	
 	public Student getStudent(int studentId) {
+
 		return students.get(studentId);
 	}
 	

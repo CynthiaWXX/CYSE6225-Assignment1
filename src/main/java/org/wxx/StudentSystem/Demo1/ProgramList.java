@@ -31,8 +31,6 @@ public class ProgramList {
 	}
 
 	@Path("AllStudentList")
-	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
-	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public AllStudentLists getAllStudentList() {
 		return new AllStudentLists();
 	}
